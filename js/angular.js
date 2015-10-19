@@ -1,6 +1,9 @@
 var app = angular.module('myApp', []);
-		app.controller('myCtrl', function($scope)	//$scope = whole model
-		{
-			$scope.firstName= "John";
-			$scope.lastName= "Doe";
-		});
+app.controller('myCtrl', function($scope)	//$scope = whole model
+{
+	$scope.init = function()
+	{
+		$scope.firstName	= 'John';
+		$scope.lastName		= 'Doe';
+	}
+});
